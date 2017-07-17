@@ -114,9 +114,9 @@ class BitFieldTests(unittest.TestCase):
 
 
 def load_tests(loader, tests, ignore):
-    """Add doctests to any loaded unit tests."""
     # type: (unittest.TestLoader, unittest.TestSuite, Optional[str]) -> unittest.TestSuite
-    tests.addTests(doctest.DocTestSuite(bfield))  # type: ignore
+    """Add doctests to any loaded unit tests."""
+    tests.addTests(doctest.DocTestSuite(bfield))
     return tests
 
 
